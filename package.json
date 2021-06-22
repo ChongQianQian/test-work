@@ -1,7 +1,7 @@
 {
   "name": "ko",
-  "author": "DTStack",
-  "version": "5.0.5",
+  "author": "work-flow-test",
+  "version": "3.0.0",
   "description": "building tools based on webpack",
   "main": "index.js",
   "scripts": {
