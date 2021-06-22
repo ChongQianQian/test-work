@@ -1,7 +1,7 @@
 {
-  "name": "ko",
-  "author": "work-flow-test",
-  "version": "3.0.0",
+  "name": "work-flow-test",
+  "author": "lll",
+  "version": "3.0.2",
   "description": "building tools based on webpack",
   "main": "index.js",
   "scripts": {
@@ -119,7 +119,7 @@
     "@commitlint/config-conventional": "^12.0.1",
     "commitizen": "^4.2.3",
     "cz-conventional-changelog": "^3.3.0",
-    "husky": "^5.1.3"
+    "husky": "^6.0.0"
   },
   "engines": {
     "node": ">=10 <=12"
