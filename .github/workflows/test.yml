@@ -1,8 +1,8 @@
-name: auto publish
+name: test
 on:
   push:
     branches:
-      - dev
+      - master
 
 jobs:
   setup:
