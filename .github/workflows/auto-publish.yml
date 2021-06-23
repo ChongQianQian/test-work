@@ -2,7 +2,8 @@ name: Next master
 
 on:
   push:
-    branches: [ dev ]
+    branches: 
+      - master
 
 jobs:
   publish-to-npm:
@@ -10,14 +11,12 @@ jobs:
     steps:
       - name: Checkout master branch code
         uses: actions/checkout@v2
-        with:
-          fetch-depth: 1
     
       - name: Use Node.js
         uses: actions/setup-node@v1
         with:
           node-version: '12.x'
-          registry-url: https://registry.npmjs.org/ 
+          # registry-url: https://registry.npmjs.org/ 
       
       - uses: actions/cache@v2
         with:
