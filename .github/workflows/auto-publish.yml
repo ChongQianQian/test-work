@@ -14,12 +14,12 @@ jobs:
           fetch-depth: 1
       
       - uses: actions/cache@v2
-          with:
+        with:
             path: '**/node_modules'
             key: ${{ runner.os }}-modules-${{ hashFiles('**/yarn.lock') }}
             
       - name: install packages
-          run: yarn add husky
+        run: yarn add husky
 
       - name: Use Node.js
         uses: actions/setup-node@v1
