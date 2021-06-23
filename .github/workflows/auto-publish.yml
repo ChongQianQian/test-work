@@ -13,6 +13,13 @@ jobs:
         with:
           fetch-depth: 1
       
+      - uses: actions/cache@v2
+          with:
+            path: '**/node_modules'
+            key: ${{ runner.os }}-modules-${{ hashFiles('**/yarn.lock') }}
+            
+      - name: install packages
+          run: yarn add husky
 
       - name: Use Node.js
         uses: actions/setup-node@v1
@@ -21,6 +28,6 @@ jobs:
           registry-url: https://registry.npmjs.org/      
           
       - name: Publish to NPM
-        run: yarn add husky && npm publish
+        run: npm publish
         env:
           NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
