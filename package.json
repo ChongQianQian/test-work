@@ -34,9 +34,6 @@
     "preview",
     "script"
   ],
-  "bugs": {
-    "url": "https://github.com/DTStack/ko/issues"
-  },
   "dependencies": {
     "@typescript-eslint/eslint-plugin": "^4.16.1",
     "@typescript-eslint/parser": "^4.16.1",
