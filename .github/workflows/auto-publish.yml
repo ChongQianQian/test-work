@@ -3,7 +3,7 @@ name: auto publish
 on:
   push:
     branches: 
-      - master
+      - dev
 
 jobs:
   publish-to-npm:

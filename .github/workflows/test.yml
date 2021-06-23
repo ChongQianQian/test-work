@@ -2,7 +2,7 @@ name: test
 on:
   push:
     branches:
-      - dev
+      - master
 
 jobs:
   setup:
@@ -25,7 +25,7 @@ jobs:
             key: ${{ runner.os }}-modules-${{ hashFiles('**/yarn.lock') }}
 
         - name: install packages
-          run: yarn install
+          run: yarn add husky
 
   publish-npm:
     runs-on: ubuntu-latest
