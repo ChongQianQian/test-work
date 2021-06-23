@@ -1,7 +1,7 @@
 {
   "name": "work-flow-test",
   "author": "ylchong",
-  "version": "3.1.1",
+  "version": "3.1.2",
   "description": "building tools based on webpack",
   "main": "index.js",
   "scripts": {
